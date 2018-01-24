@@ -9,8 +9,7 @@
             $('#click').click(function(){
                 $('body').css('background-color', 'blue');
             })
-            var isBlue = false;
-
+            
             $('#hide').click(function(){
                 $('#hide-p').hide(3000);
             })
@@ -21,13 +20,16 @@
                 });
             })
 
-            var backgroundColor = getElementsByTag('body');
-
-            $('#toggle').click(function(){
+           $('#toggle').click(function(){
                 
                 $('#span').toggle();
                 
             })
+            
+            $('#div1').click(function(){
+                
+            })
+
         });
 
 
@@ -48,6 +50,9 @@
         <button id="toggle">Toggle text here: </button>
         <span id="span">Hello there</span>
     </p>
+    <div id="div1">
+
+    </div>
 </body>     
 
 </html>
