@@ -3,6 +3,7 @@
 <head>
     <meta charset = "utf-8">
     <title>jQuery Practice</title>
+    <link rel="stylesheet" href="jQuery.css">
     <script src= "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -26,8 +27,25 @@
                 
             })
             
-            $('#div1').click(function(){
-                
+            $('#fadeOut').click(function(){
+                $('.div1').fadeOut("slow");
+
+            })
+            $('#fadeIn').click(function(){
+                $('.div1').fadeIn("slow");
+
+            })
+            $('img').click(function(){
+                $('img').slideUp('slow');
+            })
+            $('img').click(function(){
+                $('img').slideToggle('slow');
+            })
+            $('#link1').click(function(){
+                $('h6').text();
+            })
+            $('input').click(function(){
+                $('input').val("Type");
             })
 
         });
@@ -50,9 +68,22 @@
         <button id="toggle">Toggle text here: </button>
         <span id="span">Hello there</span>
     </p>
-    <div id="div1">
-
-    </div>
+    <p>
+        <button id="fadeOut">Click here to make the pink box disappeared</button>
+        <div class="div1"></div>
+    </p>
+    <p>
+        <button id="fadeIn">Click here to see change box again</button>
+    </p>
+    <img src="kangaroo.jpg">
+    <p><a id="link1" href>Link One</a>
+        <h6>Link One has been clicked</h6>
+    </p>
+    <p>
+    <label for="first_name">First Name</label>
+    <input type="text" name="first_name" value="first_name">
+    </p>
+    
 </body>     
 
 </html>
