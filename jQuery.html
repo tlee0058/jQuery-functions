@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title>jQuery Practice</title>
+    <script src= "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#click').click(function(){
+                $('body').css('background-color', 'blue');
+            })
+            var isBlue = false;
+
+            $('#hide').click(function(){
+                $('#hide-p').hide(3000);
+            })
+
+            $('#show').click(function(){
+                $('#hide-p').show(function(){
+                    $('#hide-p').text("it's me again");
+                });
+            })
+
+            var backgroundColor = getElementsByTag('body');
+
+            $('#toggle').click(function(){
+                
+                $('#span').toggle();
+                
+            })
+        });
+
+
+    </script>
+     
+        
+</head>  
+<body>
+    <button id="click">Click here to change background to blue</button>
+    <p>
+        <button id="hide">Click to hide text below></button>
+        <p id="hide-p">Now you see me, now you don't</p>
+    </p>
+    <p>
+        <button id="show">Click here to show text again</button>
+    </p>
+    <p>
+        <button id="toggle">Toggle text here: </button>
+        <span id="span">Hello there</span>
+    </p>
+</body>     
+
+</html>
