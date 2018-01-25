@@ -47,6 +47,9 @@
             $('input').click(function(){
                 $('input').val("Type");
             })
+            $('#append').click(function(){
+                $('#text-append').append("hello");
+            })
 
         });
 
@@ -82,6 +85,10 @@
     <p>
     <label for="first_name">First Name</label>
     <input type="text" name="first_name" value="first_name">
+    </p>
+    <p>
+        <button id="append">Append Text</button>
+        <p id="text-append">Here is the new text</p>
     </p>
     
 </body>     
